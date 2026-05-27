@@ -1,0 +1,45 @@
+name: BasaltRanks
+version: '2.2.0'
+main: dev.turok_ss.basaltranks.BasaltRanks
+description: Free visual rank badge generator for chat, nametags, and tab
+api-version: '1.20'
+author: Turok_SS
+website: https://builtbybit.com/members/turok_ss
+prefix: BasaltRanks
+load: STARTUP
+folia-supported: true
+softdepend: [LuckPerms, PlaceholderAPI]
+
+commands:
+  badge:
+    description: Badge management
+    usage: /badge <create|edit|delete|list|assign|remove|animate|templates|reload|preview|web>
+    aliases: [badges, ranks]
+    permission: basaltranks.use
+  basaltranks:
+    description: BasaltRanks admin
+    usage: /basaltranks <reload|version>
+    aliases: [branks]
+    permission: basaltranks.use
+
+permissions:
+  basaltranks.*:
+    description: All BasaltRanks permissions
+    default: op
+    children:
+      basaltranks.admin: true
+      basaltranks.use: true
+      basaltranks.list: true
+      basaltranks.web: true
+  basaltranks.admin:
+    description: Admin commands (create, edit, delete, assign, remove, templates, reload, render, preview)
+    default: op
+  basaltranks.use:
+    description: Basic usage
+    default: true
+  basaltranks.list:
+    description: List badges
+    default: true
+  basaltranks.web:
+    description: Access web badge editor panel
+    default: op

@@ -1,0 +1,43 @@
+# ============================================================
+# BasaltRanks - Active Badges
+# This file is auto-managed by the plugin. You can edit manually
+# but changes will be overwritten when the plugin saves.
+# ============================================================
+
+# Next Unicode character slot (Private Use Area starting at U+E100)
+next-unicode: 57603  # = 0xE103 (3 badges below use E100, E101, E102)
+
+# Active badge definitions
+badges:
+  owner:
+    display-text: "OWNER"
+    bg-color: "#FF0000"
+    text-color: "#FFFFFF"
+    gradient-color: "#8B0000"
+    border-color: "#FFD700"
+    border-radius: 1
+    priority: 100
+    unicode-char: 57600  # U+E100
+    style: metallic
+  admin:
+    display-text: "ADMIN"
+    bg-color: "#FF4500"
+    text-color: "#FFFFFF"
+    gradient-color: "#CC3700"
+    border-color: "#FF8C00"
+    border-radius: 1
+    priority: 90
+    unicode-char: 57601  # U+E101
+    style: 3d
+  vip:
+    display-text: "VIP"
+    bg-color: "#FFD700"
+    text-color: "#000000"
+    border-color: "#DAA520"
+    border-radius: 1
+    priority: 50
+    unicode-char: 57602  # U+E102
+    style: glass
+
+# Player badge assignments (UUID -> badge ID)
+players: {}

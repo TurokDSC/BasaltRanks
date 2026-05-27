@@ -1,0 +1,106 @@
+# BasaltRanks Configuration
+# Visual Rank Badge Generator by Turok_SS
+
+# Do not modify — used for config migrations
+config-version: 2
+
+# -----------------------------------------------
+# Module toggles
+# Set to false to disable a module entirely
+# -----------------------------------------------
+modules:
+  badge: true          # Core badge system (CRUD, persistence, rendering)
+  resourcepack: true   # Resource pack generation and HTTP server
+  display: true        # Chat, nametag, and tab badge display
+  luckperms: true      # Auto-assign badges based on LuckPerms groups
+  editor: true         # GUI editor, template browser, /badge commands
+  web-editor: true     # Web-based badge editor panel (browser UI)
+
+# -----------------------------------------------
+# Resource Pack Server
+# -----------------------------------------------
+resourcepack:
+  # Public IP or domain where players download the pack
+  # IMPORTANT: Change from "localhost" to your server's public IP
+  # Pterodactyl: Set env BASALTRANKS_IP or SERVER_IP (auto-detected)
+  server-ip: "localhost"
+  # HTTP port for the resource pack + web editor server
+  # Pterodactyl: Set env BASALTRANKS_PORT to your allocated port
+  # Env variables always take priority over these config values
+  port: 8080
+  # Force players to accept the resource pack
+  force-pack: true
+  # Prompt message shown when the pack is sent
+  prompt-message: "<gold>This server uses custom rank badges. Accept the resource pack to see them!"
+  # Auto-regenerate pack when badges change
+  auto-regenerate: true
+
+# -----------------------------------------------
+# Web Editor Panel
+# Access at http://your-ip:8080/web
+# -----------------------------------------------
+web-editor:
+  # Auto-start web editor on plugin enable
+  # Disable if you don't use the web editor to save resources
+  auto-start: true
+  # Password required to access the web editor API
+  # IMPORTANT: Change this before exposing to the internet!
+  password: "change-me"
+
+# -----------------------------------------------
+# Display Settings
+# -----------------------------------------------
+display:
+  # Show badge in chat messages
+  chat: true
+  # Show badge above player heads (Scoreboard teams)
+  nametag: true
+  # Show badge in the tab player list
+  tab: true
+  # Show suffix badge after player name
+  suffix: true
+  # Space character(s) after the badge unicode char
+  badge-suffix: " "
+
+# -----------------------------------------------
+# Animation Settings
+# Controls badge animation tick rates
+# -----------------------------------------------
+animation:
+  # Base tick rate for the animation scheduler (lower = smoother, higher = less CPU)
+  base-tick-rate: 5
+  # How often the tab list updates for animated badges (in ticks)
+  tab-update-rate: 10
+  # How often nametags update for animated badges (in ticks)
+  nametag-update-rate: 10
+
+# -----------------------------------------------
+# LuckPerms Integration
+# Maps LuckPerms group names to badge IDs
+# -----------------------------------------------
+luckperms:
+  group-badges:
+    owner: "owner"
+    admin: "admin"
+    mod: "mod"
+    helper: "helper"
+    vip: "vip"
+    default: ""
+
+# -----------------------------------------------
+# GUI Sound Effects
+# Uses Minecraft sound names (BLOCK_NOTE_BLOCK_CHIME, etc.)
+# -----------------------------------------------
+sounds:
+  volume: 0.5
+  pitch: 1.0
+  open: BLOCK_NOTE_BLOCK_CHIME
+  click: UI_BUTTON_CLICK
+  success: ENTITY_PLAYER_LEVELUP
+  error: ENTITY_VILLAGER_NO
+
+# -----------------------------------------------
+# Update Checker
+# Checks for new versions on server start
+# -----------------------------------------------
+update-check: true

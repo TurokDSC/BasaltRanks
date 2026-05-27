@@ -1,0 +1,209 @@
+# ============================================================
+# BasaltRanks - Badge Templates
+# 26 pre-made templates organized by category
+# These are used with /badge create <id> --template <template>
+# Styles: flat, 3d, glass, metallic, neon
+# ============================================================
+
+# --- Staff Badges ---
+staff:
+  owner:
+    display-text: "OWNER"
+    bg-color: "#FF0000"
+    text-color: "#FFFFFF"
+    gradient-color: "#8B0000"
+    border-color: "#FFD700"
+    border-radius: 1
+    style: metallic
+  admin:
+    display-text: "ADMIN"
+    bg-color: "#FF4500"
+    text-color: "#FFFFFF"
+    gradient-color: "#CC3700"
+    border-color: "#FF8C00"
+    border-radius: 1
+    style: 3d
+  mod:
+    display-text: "MOD"
+    bg-color: "#2E8B57"
+    text-color: "#FFFFFF"
+    border-color: "#3CB371"
+    border-radius: 1
+    style: 3d
+  helper:
+    display-text: "HELPER"
+    bg-color: "#4682B4"
+    text-color: "#FFFFFF"
+    border-color: "#5F9EA0"
+    border-radius: 1
+    style: flat
+  builder:
+    display-text: "BUILDER"
+    bg-color: "#D2691E"
+    text-color: "#FFFFFF"
+    border-color: "#8B4513"
+    border-radius: 1
+    style: 3d
+  dev:
+    display-text: "DEV"
+    bg-color: "#1E1E2E"
+    text-color: "#00FF00"
+    border-color: "#00AA00"
+    border-radius: 1
+    style: neon
+
+# --- Rank Badges ---
+rank:
+  vip:
+    display-text: "VIP"
+    bg-color: "#FFD700"
+    text-color: "#000000"
+    border-color: "#DAA520"
+    border-radius: 1
+    style: glass
+  vip-plus:
+    display-text: "VIP+"
+    bg-color: "#FFD700"
+    text-color: "#000000"
+    gradient-color: "#FFA500"
+    border-color: "#DAA520"
+    border-radius: 2
+    style: glass
+  mvp:
+    display-text: "MVP"
+    bg-color: "#00BFFF"
+    text-color: "#FFFFFF"
+    border-color: "#1E90FF"
+    border-radius: 1
+    style: metallic
+  mvp-plus:
+    display-text: "MVP+"
+    bg-color: "#00BFFF"
+    text-color: "#FFFFFF"
+    gradient-color: "#0080FF"
+    border-color: "#1E90FF"
+    border-radius: 2
+    style: metallic
+  elite:
+    display-text: "ELITE"
+    bg-color: "#8A2BE2"
+    text-color: "#FFFFFF"
+    gradient-color: "#4B0082"
+    border-color: "#9400D3"
+    border-radius: 2
+    style: glass
+  legend:
+    display-text: "LEGEND"
+    bg-color: "#FF1493"
+    text-color: "#FFFFFF"
+    gradient-color: "#C71585"
+    border-color: "#FF69B4"
+    border-radius: 2
+    style: metallic
+  titan:
+    display-text: "TITAN"
+    bg-color: "#B22222"
+    text-color: "#FFD700"
+    gradient-color: "#8B0000"
+    border-color: "#DC143C"
+    border-radius: 2
+    style: 3d
+
+# --- Special Badges ---
+special:
+  og:
+    display-text: "OG"
+    bg-color: "#2F4F4F"
+    text-color: "#FFD700"
+    border-color: "#696969"
+    border-radius: 1
+    style: flat
+  beta:
+    display-text: "BETA"
+    bg-color: "#191970"
+    text-color: "#00CED1"
+    border-color: "#4169E1"
+    border-radius: 1
+    style: glass
+  verified:
+    display-text: "VERIFIED"
+    bg-color: "#1DA1F2"
+    text-color: "#FFFFFF"
+    border-radius: 2
+    style: glass
+  nitro:
+    display-text: "NITRO"
+    bg-color: "#5865F2"
+    text-color: "#FFFFFF"
+    gradient-color: "#EB459E"
+    border-color: "#7289DA"
+    border-radius: 2
+    style: neon
+  booster:
+    display-text: "BOOSTER"
+    bg-color: "#F47FFF"
+    text-color: "#FFFFFF"
+    gradient-color: "#FF73FA"
+    border-color: "#FF9FFE"
+    border-radius: 1
+    style: neon
+  veteran:
+    display-text: "VETERAN"
+    bg-color: "#556B2F"
+    text-color: "#FFFFFF"
+    border-color: "#6B8E23"
+    border-radius: 1
+    style: metallic
+
+# --- Fun Badges ---
+fun:
+  pro:
+    display-text: "PRO"
+    bg-color: "#FF6347"
+    text-color: "#FFFFFF"
+    gradient-color: "#FF4500"
+    border-radius: 1
+    style: 3d
+  noob:
+    display-text: "NOOB"
+    bg-color: "#808080"
+    text-color: "#FFFFFF"
+    border-radius: 0
+    style: flat
+  goat:
+    display-text: "GOAT"
+    bg-color: "#000000"
+    text-color: "#FFD700"
+    gradient-color: "#1A1A1A"
+    border-color: "#FFD700"
+    border-radius: 2
+    style: metallic
+  afk:
+    display-text: "AFK"
+    bg-color: "#A9A9A9"
+    text-color: "#696969"
+    border-radius: 0
+    style: flat
+  streamer:
+    display-text: "LIVE"
+    bg-color: "#9146FF"
+    text-color: "#FFFFFF"
+    gradient-color: "#6441A5"
+    border-color: "#BF94FF"
+    border-radius: 1
+    style: neon
+  youtuber:
+    display-text: "YT"
+    bg-color: "#FF0000"
+    text-color: "#FFFFFF"
+    border-color: "#CC0000"
+    border-radius: 1
+    style: neon
+  champion:
+    display-text: "CHAMP"
+    bg-color: "#FFD700"
+    text-color: "#FFFFFF"
+    gradient-color: "#FF8C00"
+    border-color: "#B8860B"
+    border-radius: 2
+    style: metallic
